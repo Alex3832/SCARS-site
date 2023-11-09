@@ -1,1 +1,1 @@
-# SCAB-frontend
+# SCARS-site
