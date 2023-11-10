@@ -26,15 +26,45 @@ h1 {
       text-align: center;
 }
 
-.boxtext {
-    margin-top: 150px;
-    text-align: center;
-    width: 400px;
-    height: 250px;
-    background-color: black;
-    color: whitesmoke;
-    font-size: 30px;
-    border-style: dotted;
-    border-color: #ff8300;
-    border-width: 5px;
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#drop-image {
+  border: dotted;
+  aspect-ratio: 1/1;
+  width: 50vw;
+  min-width: 330px;
+  max-width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+#upload-button {
+  background-color: white;
+  border: solid 1px black;
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#cancer-types {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  min-width: 330px;
+  border-bottom: solid 1px black;
 }
