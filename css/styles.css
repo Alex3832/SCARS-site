@@ -74,3 +74,8 @@ main {
   min-width: 330px;
   border-bottom: solid 1px black;
 }
+
+#uploaded-image {
+  max-width: 100%;
+  max-height: 100%;
+}
