@@ -132,8 +132,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    
-
+    background: white;
 }
 
 .hamburger {
@@ -179,20 +178,19 @@ a {
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        left: 0;
+        top: -100%;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
-        left: 0;
+        top: 5rem;
     }
 
     .nav-item {
