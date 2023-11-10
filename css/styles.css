@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-    padding: 5px;
+    padding: 7px;
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -55,6 +55,12 @@ main {
   padding: 4px;
   border-radius: 4px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+#burger {
+  width: 35px;
+  height: 35px;
   cursor: pointer;
 }
 
