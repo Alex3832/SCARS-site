@@ -25,3 +25,16 @@ nav {
 h1 {
       text-align: center;
 }
+
+.boxtext {
+    margin-top: 150px;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 30px;
+    border-style: dotted;
+    border-color: #ff8300;
+    border-width: 5px;
+}
