@@ -74,6 +74,8 @@ main {
 }
 
 #cancer-bars {
+  font-size: 150%; /*delete if necessary*/
+  font-family: 'Roboto', sans-serif; /*delete if necessary*/
   border-top: solid 1px black;
   width: 90%;
   max-height: 50vh;
@@ -122,6 +124,7 @@ a {
 
 .header{
     border-bottom: 1px solid #E2E8F0;
+    
 }
 
 .navbar {
