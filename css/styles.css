@@ -73,14 +73,20 @@ main {
   min-width: 330px;
 }
 
+h2 {
+  font-size: large;
+}
+
 #cancer-bars {
   font-size: 150%; /*delete if necessary*/
   font-family: 'Roboto', sans-serif; /*delete if necessary*/
-  border-top: solid 1px black;
+  border-top: solid 2px #E2E8F0;
   width: 90%;
   max-height: 50vh;
   overflow-y: scroll;
-  border-bottom: solid 1px black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #E2E8F0;
 }
 
 .cancer-type {
@@ -92,11 +98,24 @@ main {
   margin-bottom: 5px;
 }
 
-#cancer-bars label {
+.label-container {
   width: 20%;
-  overflow: scroll;
+  overflow: hidden;
   white-space: nowrap;
-  animation: 3s linear 0s infinite alternate move;
+}
+
+.text-scroll-animation {
+  animation: 4s linear 0s infinite alternate move;
+}
+
+@keyframes move {
+  0%, 66% {
+    margin-left: 0;
+  }
+
+  33%, 100% {
+    margin-left: -90%;
+  }
 }
 
 .meters {
