@@ -235,3 +235,9 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+.tester {
+  color: red;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
