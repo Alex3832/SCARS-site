@@ -16,26 +16,6 @@ document.querySelector('input[type="file"]').addEventListener('change', function
     }
 })
       
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
-
-
 // detect if any of the cancer labels are overflowing
 // if so, apply auto-text scroll animation
 window.addEventListener("resize", (event) => {
