@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
   
 nav {
     padding: 7px;
@@ -19,6 +20,10 @@ h1 {
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 li {
@@ -123,3 +128,4 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+

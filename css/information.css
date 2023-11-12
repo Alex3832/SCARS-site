@@ -1,0 +1,22 @@
+.info {
+	font-size: 250%;
+	padding-top: 5vh;
+}
+
+.warning {
+	font-size: 180%;
+	margin: 1vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+
+
+
+.infodesc {
+	width: 80vw;
+	margin: 1vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	font-size: 175%;
+}
