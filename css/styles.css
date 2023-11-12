@@ -53,10 +53,6 @@ main {
   min-width: 330px;
 }
 
-h2 {
-  font-size: large;
-}
-
 #cancer-bars {
   font-size: 150%; /*delete if necessary*/
   font-family: 'Roboto', sans-serif; /*delete if necessary*/
