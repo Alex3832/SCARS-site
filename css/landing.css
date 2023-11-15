@@ -28,7 +28,7 @@ body {
 
 #title {
 	font-family: General Sans, sans-serif;
-	font-size: clamp(4rem, 11rem, 16rem)
+	font-size: clamp(4rem, 14vw, 16rem)
 }
 
 #title span {
