@@ -18,6 +18,10 @@ main {
   flex-wrap: wrap;
 }
 
+body {
+  background: linear-gradient(180deg, #FFDAC2, #ffdab1);
+}
+
 #drop-image {
   border: dotted;
   aspect-ratio: 1/1;
