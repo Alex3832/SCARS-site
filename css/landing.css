@@ -38,11 +38,12 @@ body {
 #subtitle {
 	font-family: General Sans, sans-serif;
 	font-style: italic;
-	inline-size: 750px;
 	overflow-wrap: break-word;
-	font-size: 1.5rem;
+	font-size: clamp(1rem, 5vw, 1.5rem);	
 	margin-bottom: 15px;
 	margin-top: -15px
+	width: clamp(300px, 50vw, 800px);
+	
 }
 
 #button-row {
