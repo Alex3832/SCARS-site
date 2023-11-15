@@ -16,7 +16,7 @@ body {
 }
 
 #img {
-	width: clamp(150px, 20vw, 400px)
+	width: clamp(300px, 18vw, 800px)
 }
 
 #landing-text {
@@ -28,7 +28,7 @@ body {
 
 #title {
 	font-family: General Sans, sans-serif;
-	font-size: clamp(7rem, 15vw, 16rem)
+	font-size: clamp(4rem, 18vw, 16rem)
 }
 
 #title span {
@@ -40,14 +40,19 @@ body {
 	font-style: italic;
 }
 
-#button {
+#button-row {
+	display: flex;
+	gap: 10px;
+}
+
+.button {
 	display: flex;
 	width: fit-content;
 	justify-content: center;
 	font-size: 1.75rem;
+	border-radius: 4px;	
 	color: black;
 	background-color: orange;
-	border-radius: 4px;	
 	margin-top: 10px;
 	font-family: cocogoose, sans-serif;
 	padding: 5px;
@@ -56,7 +61,19 @@ body {
 	text-decoration: none;
 }
 
-#button:hover {
+.button:hover {
 	color: orange;
 	background-color: black;
+}
+
+#sub-button {
+	color: black;
+	background-color: #a4c3d8;
+	text-shadow: none;
+}
+
+#sub-button:hover {
+	color: white;
+	background: #C2E7FF;
+	text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
 }
