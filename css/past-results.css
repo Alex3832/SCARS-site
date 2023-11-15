@@ -1,3 +1,7 @@
+body {
+	background: linear-gradient(180deg, #FFDAC2, #ffdab1);
+}
+
 .pastresults {
 	padding-top: 5vh;
 }
