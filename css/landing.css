@@ -28,7 +28,7 @@ body {
 
 #title {
 	font-family: General Sans, sans-serif;
-	font-size: clamp(4rem, 18vw, 16rem)
+	font-size: clamp(4rem, 11rem, 16rem)
 }
 
 #title span {
@@ -38,6 +38,11 @@ body {
 #subtitle {
 	font-family: General Sans, sans-serif;
 	font-style: italic;
+	inline-size: 750px;
+	overflow-wrap: break-word;
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	margin-top: -15px
 }
 
 #button-row {
