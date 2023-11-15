@@ -19,7 +19,7 @@ main {
 }
 
 body {
-  background: linear-gradient(0deg, #FFDAC2, #FFFFFF);
+  background: linear-gradient(180deg, #FFDAC2, #ffdab1);
 }
 
 #drop-image {
