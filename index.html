@@ -1,111 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- SITE INFO -->
-    <title>SCARS AI</title>
-    <meta name="description" content="SCARS AI - Skin Cancer Automatic Recognition System">
-    <meta name="keywords" content="Skin Cancer, Cancer, Artificial Intelligence, Machine Learning, Neural Networks, Image Classification">
-    <meta name="author" content="Deven Dangi, Alex Srivastava">
+    <head>
+        <title>SCARSAI</title>
+        <meta name="description" content="description here">
+        <meta name="keywords" content="Key words here">
+        <meta name="author" content="Deven Dangi, Alex Srivastava">
+        <meta charset="UTF-8">
 
-    <!-- META TAGS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- META TAGS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS LINK -->
-    <link href="css/styles.css" rel="stylesheet"/>
-    <link href="css/nav.css" rel="stylesheet"/>
-  </head>
-  <body>
-      <header class="header">
-            <nav class="navbar">
-                <a href="#" class="nav-logo"><h1 style="color: #000000;">SCARS<span style="color: #ff8300;">AI</span></h1></a>
-                <ul class="nav-menu">
-                  <li class="nav-item">
-                        <a href="/about" class="nav-link">About</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="/information" class="nav-link">Information</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="/past-results" class="nav-link">Past Results</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Detection</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
+        <!-- CSS LINK -->
+        <link href="css/landing.css" rel="stylesheet"/>
+        <link href="https://api.fontshare.com/v2/css?f[]=general-sans@600,401&display=swap" rel="stylesheet">
 
-      <main>
-        <div id="drop-image">
-          <h2>Drag and Drop Image Here</h2>
-          <input id="upload-button" type="file" accept="image/jpeg, image/png">
-
-        </div>
-
-        <div id="cancer-types">
-          <h2>Cancer Types</h2>
-
-          <div id="cancer-bars">
-            <!-- Will change and order dynamically-->
-            <div class="cancer-type">
-              <div class="label-container">
-                <label for="bar-melanoma">Melanoma</label>
-              </div>
-              <meter class="meters" id="bar-melanoma" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="80"></meter>
-              <span class="meter-val">80%</span>
-            </div>
-            <div class="cancer-type">
-              <div class="label-container">
-                <label for="bar-a">Actinic Keratoses</label>
-              </div>
-              <meter class="meters" id="bar-a" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="40"></meter>
-              <span class="meter-val">40%</span>
-            </div>
-            <div class="cancer-type">
-              <div class="label-container">
-                <label for="bar-b">B</label>
-              </div>
-              <meter class="meters" id="bar-b" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="20"></meter>
-              <span class="meter-val">20%</span>
-            </div>
-            <div class="cancer-type">
-              <div class="label-container">
-                <label for="bar-c">C</label>
-              </div>
-              <meter class="meters" id="bar-c" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="10"></meter>
-              <span class="meter-val">10%</span>
-            </div>
-            <div class="cancer-type">
-              <div class="label-container">
-                <label for="bar-d">D</label>
-              </div> 
-              <meter class="meters" id="bar-d" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="4"></meter>
-              <span class="meter-val">04%</span>
-            </div>
-            <div class="cancer-type">
-              <div class="label-container">
-                <label for="bar-e">E</label>
-              </div>
-              <meter class="meters" id="bar-e" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="1"></meter>
-              <span class="meter-val">01%</span>
-            </div>
-            
-          </div>
-
-        </div>
+    </head>
+    <body>
+        <main id="landing-text">
+            <h1 id="title">
+                Scars<span style="color: orange;">AI</span>      
+            </h1>   
+            <h3 id="subtitle">
+                A short description of ScarsAI.
+            </h3>
+            <a id="button" href="detection">Classify ↗</a>
+        </main>
         
-      </main>
+        <img id="img" src="public/logo.png">
 
-    <!-- JS Links -->
-    <script src="js/main.js"></script>
-    <script src="js/nav.js"></script>
-  </body>
+        <!-- JS Links -->
+        <script src="js/landing.js"></script>
+        <script src="js/nav.js"></script>
+    </body>
 </html>

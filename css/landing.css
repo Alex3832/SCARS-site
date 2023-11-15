@@ -1,39 +1,62 @@
-@font-face {font-family: cocogoose; src: url('../Cocogoose_Pro_Semilight-trial.ttf');}
+@font-face {font-family: cocogoose; src: url('../fonts/Cocogoose_Pro_Semilight-trial.ttf');}
 
 * {
-	background-color: #C2E7FF;
+	margin: 0;
+	padding: 0;
 }
 
-.title {
+body {
+	height: 100vh;
 	display: flex;
-	height: 40vh;
-	width: 40vw;
-	align-items: flex-end;
-	justify-content: flex-end;
-	font-size: 2.5rem;
-	background: "white";
-	font-family: "General Sans", sans-serif;
-}
-
-
-.description {
-	display: flex;
-	width: 45vw;
-	font-size: 1.5rem;
+	align-items: center;
 	justify-content: center;
-	text-align: center;
+	flex-wrap: wrap;
+	gap: 5vw;
+	background: linear-gradient(180deg, #FFDAC2, #ffdab1);
 }
 
+#img {
+	width: clamp(150px, 20vw, 400px)
+}
 
+#landing-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+#title {
+	font-family: General Sans, sans-serif;
+	font-size: clamp(7rem, 15vw, 16rem)
+}
+
+#title span {
+	text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+}
+
+#subtitle {
+	font-family: General Sans, sans-serif;
+	font-style: italic;
+}
 
 #button {
 	display: flex;
-	width: 45vw;
+	width: fit-content;
 	justify-content: center;
 	font-size: 1.75rem;
-	color: orange;
-	background-color: black;
-	border-radius: 10px;	margin-top: 10px;
+	color: black;
+	background-color: orange;
+	border-radius: 4px;	
+	margin-top: 10px;
+	font-family: cocogoose, sans-serif;
+	padding: 5px;
 	border: solid black 3px;
 	transition: all 0.2s ease;
+	text-decoration: none;
+}
+
+#button:hover {
+	color: orange;
+	background-color: black;
 }

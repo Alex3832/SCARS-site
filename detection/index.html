@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- SITE INFO -->
+    <title>SCARS AI</title>
+    <meta name="description" content="SCARS AI - Skin Cancer Automatic Recognition System">
+    <meta name="keywords" content="Skin Cancer, Cancer, Artificial Intelligence, Machine Learning, Neural Networks, Image Classification">
+    <meta name="author" content="Deven Dangi, Alex Srivastava">
+
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!-- CSS LINK -->
+    <link href="../css/styles.css" rel="stylesheet"/>
+    <link href="../css/nav.css" rel="stylesheet"/>
+  </head>
+  <body>
+      <header class="header">
+            <nav class="navbar">
+                <a href="../index.html" class="nav-logo"><h1 style="color: #000000;">SCARS<span style="color: #ff8300;">AI</span></h1></a>
+                <ul class="nav-menu">
+                  <li class="nav-item">
+                        <a href="../about" class="nav-link">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="../information" class="nav-link">Information</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="../past-results" class="nav-link">Past Results</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Detection</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+      <main>
+        <div id="drop-image">
+          <h2>Drag and Drop Image Here</h2>
+          <input id="upload-button" type="file" accept="image/jpeg, image/png">
+
+        </div>
+
+        <div id="cancer-types">
+          <h2>Cancer Types</h2>
+
+          <div id="cancer-bars">
+            <!-- Will change and order dynamically-->
+            <div class="cancer-type">
+              <div class="label-container">
+                <label for="bar-melanoma">Melanoma</label>
+              </div>
+              <meter class="meters" id="bar-melanoma" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="80"></meter>
+              <span class="meter-val">80%</span>
+            </div>
+            <div class="cancer-type">
+              <div class="label-container">
+                <label for="bar-a">Actinic Keratoses</label>
+              </div>
+              <meter class="meters" id="bar-a" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="40"></meter>
+              <span class="meter-val">40%</span>
+            </div>
+            <div class="cancer-type">
+              <div class="label-container">
+                <label for="bar-b">B</label>
+              </div>
+              <meter class="meters" id="bar-b" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="20"></meter>
+              <span class="meter-val">20%</span>
+            </div>
+            <div class="cancer-type">
+              <div class="label-container">
+                <label for="bar-c">C</label>
+              </div>
+              <meter class="meters" id="bar-c" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="10"></meter>
+              <span class="meter-val">10%</span>
+            </div>
+            <div class="cancer-type">
+              <div class="label-container">
+                <label for="bar-d">D</label>
+              </div> 
+              <meter class="meters" id="bar-d" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="4"></meter>
+              <span class="meter-val">04%</span>
+            </div>
+            <div class="cancer-type">
+              <div class="label-container">
+                <label for="bar-e">E</label>
+              </div>
+              <meter class="meters" id="bar-e" width="100%" min="0" max="100" low="33" high="66" optimum="10" value="1"></meter>
+              <span class="meter-val">01%</span>
+            </div>
+            
+          </div>
+
+        </div>
+        
+      </main>
+
+    <!-- JS Links -->
+    <script src="../js/main.js"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>
