@@ -102,7 +102,9 @@ a {
         left: 0;
         top: -100%;
         flex-direction: column;
-        background-color: #ffca8e;
+        background-color: #fcd9c0;
+        border-top: 3px black solid;
+        border-bottom: 3px black solid;
         width: 100%;
         border-radius: 10px;
         text-align: center;
