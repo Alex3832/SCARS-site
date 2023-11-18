@@ -23,7 +23,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 }
 
 #title {
@@ -72,13 +71,12 @@ body {
 }
 
 #sub-button {
-	color: black;
-	background-color: #a4c3d8;
+	background-color: rgb(175, 175, 255);
 	text-shadow: none;
 }
 
 #sub-button:hover {
-	color: white;
-	background: #C2E7FF;
-	text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+	border-radius: 8px;
+	color: rgb(175, 175, 255);
+	background: rgba(0, 20, 40);
 }

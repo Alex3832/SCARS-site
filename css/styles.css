@@ -10,42 +10,58 @@
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   height: 100%;
   width: 100vw;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 body {
+  color: rgba(0,20,40);
   background: linear-gradient(180deg, #FFDAC2, #ffdab1);
 }
 
 #drop-image {
   border: dotted;
   aspect-ratio: 1/1;
-  width: 50vw;
+  width: 80vw;
   min-width: 330px;
-  max-width: 50vh;
+  max-width: 80vh;
   display: flex;
-  margin-left: 10vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10%;
-  background: white;
+  gap: 1vh;
+  background: rgb(255, 255, 255);
+}
+
+#url-paste {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#url-paste:hover {
+  color: rgb(238, 203, 137);
 }
 
 #upload-button {
-  background-color: white;
-  border: solid 1px black;
-  padding: 4px;
-  border-radius: 4px;
-  font-weight: 500;
-  cursor: pointer;
+  display: none;
 }
 
+#upload-label {
+  cursor: pointer;
+  padding: 7px;
+  transition: all 0.2s ease;
+  background: rgb(175, 175, 255);
+}
+
+#upload-label:hover {
+  border-radius: 4px;
+  background: rgba(0,20,40);
+  color:rgb(175, 175, 255);
+}
 
 #cancer-types {
   display: flex;
@@ -59,9 +75,15 @@ body {
 }
 
 
-
-
 #uploaded-image {
   max-width: 100%;
   max-height: 100%;
+}
+
+#disclaimer {
+  width: 80vw;
+  max-width: 80vh;
+  min-width: 330px;
+  margin-top: 5px;
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
 }

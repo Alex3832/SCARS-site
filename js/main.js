@@ -33,3 +33,7 @@ function checkCancerLabels() {
         }
     }
 }
+
+function inputURL() {
+    let url = prompt("URL:")
+}
