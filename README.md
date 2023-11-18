@@ -1,3 +1,3 @@
 # SCARS
 
-SCARS (Skin Cancer Automatic Ranking System) is an open source neural network designed to classify types of skin cancer from images of human skin. The netowkr was trained off of the HAM10000 database from Harvard
+SCARS (Skin Cancer Automatic Recognition System) is an open source neural network designed for binary classification of skin lesions/moles into either benign or malignant type.
