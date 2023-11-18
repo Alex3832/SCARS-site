@@ -12,6 +12,7 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 5vw;
+	color:rgba(0, 20, 40);
 	background: linear-gradient(180deg, #FFDAC2, #ffdab1);
 }
 
