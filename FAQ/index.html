@@ -51,33 +51,32 @@
 
         <main>
             <h1 class="info">
-                <span style="color: #ff8300;">FREQUENTLY ASKED QUESTIONS</span>
+                Frequently Asked Questions
             </h1>
 
-            <h3 class="warning">
-                THIS APP IS NOT A REPLACEMENT FOR PROFESSIONAL DIAGNOSIS AND IS NOT MEANT FOR MEDICAL USE
-            </h3>
-
-            <div class="questioncenter">
-                <details>
-                    <summary>
-                        <span>What is ScarsAI</span>
-                    </summary>    
-                </details>
-                <div class="content">ScarsAI is the bestWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAIWhat is ScarsAI</div>
-
-                <details>
-                    <summary>
-                        <span>What is ScarsAI</span>
-                    </summary>    
-                </details>
-                <div class="contentThe best</div>
+            <div class="aq-container">
+                <div class="question">
+                    <h2 class="question-text">What is ScarsAI?</h2>
+                    <img class="dropdown-arrow" src="../public/arrow.svg"/>
+                </div>
+                <div class="answer">
+                    ScarsAI, or the Skin Cancer Automatic Recognition System, is a CNN image classification model created with to classify images of moles into either benign or malignant skin cancer.
+                    <br>
+                    Or, in other words, it takes in images of moles and attempts to predict whether they are harmful (malignant) or not (benign). 
+                </div>
             </div>
-
-            
+            <div class="aq-container">
+                <div class="question">
+                    <h2 class="question-text">How accurate is ScarsAI?</h2>
+                    <img class="dropdown-arrow" src="../public/arrow.svg"/>
+                </div>
+                <div class="answer">
+                    ScarsAI in training is about <span class="number">85</span>% accurate, but in real-life application accuracy can vary depending on quality of input information. The dataset it was trained on is relatively restrictive for the goal of the model.
+                </div>
+            </div>
         </main>
         <!-- JS Links -->
-        <script src="../js/information.js"></script>
+        <script src="../js/faq.js"></script>
         <script src="../js/nav.js"></script>
     </body>
 </html>
