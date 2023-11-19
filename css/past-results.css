@@ -1,0 +1,14 @@
+body {
+	background: linear-gradient(180deg, #FFDAC2, #ffdab1);
+}
+
+.pastresults {
+	padding-top: 5vh;
+}
+
+.resultsdesc {
+	width: 80vw;
+	margin: 1vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
