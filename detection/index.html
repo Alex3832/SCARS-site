@@ -60,7 +60,31 @@
         <span id="disclaimer">This model is <strong>NOT</strong> to be used for medical purposes, or as a replacement for medical advice.</span>
       </main>
 
+      <div id="overlay" style="display: none">
+        <div id="modal">
+          <span id="modal-close" onclick="closeModal()">&times;</span>
+          <h1 id="modal-title">Prediction</h1>
+          <div id="predicted-info">
+            <h3 id="prediction">Example Prediction</h3>
+            <div id="confidence-container">
+              <div id="confidence-bar">
+                <div id="confidence"></div>
+              </div>
+              <p id="confidence-number">XX%</p>
+            </div>
+          </div>
+          <div id="modal-text">
+            <p>Remember, model can only accurately predict on images of moles/lesions on skin, and is often incorrect.</p>
+          </div>
+          <div id="button-row">
+            <button class="button" id="save-button">Save Results</button>
+            <button class="button" id="see-all-button">See Saved Results</button>
+            <button class="button" id="again-button">Try Again</button>
+          </div> 
+      </div>
+
     <!-- JS Links -->
+    <script src="../js/tensorflow.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/nav.js"></script>
   </body>
