@@ -77,6 +77,7 @@ async function handleDrop(e) {
 }
 
 async function predict(file) {
+    openLoading()
     let imageContainer = document.getElementById('drop-image');
     imageContainer.innerHTML = "<img id='uploaded-image'>";
     let image = document.getElementById('uploaded-image');
@@ -124,7 +125,14 @@ async function predict(file) {
     reader.readAsDataURL(file)
 }
 
+function openLoading() {
+    document.getElementById("loading-overlay").style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
 function openModal(prediction, confidence) {
+    document.getElementById("loading-overlay").style.display = "none"
+
     document.getElementById("overlay").style.display = "flex";
     document.body.style.overflow = "hidden";
 
