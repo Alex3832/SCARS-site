@@ -64,17 +64,9 @@ async function handleDrop(e) {
             const file = item.getAsFile();
             console.log('file[${i}].name = ${file.name}');
           } else if (item.kind === 'string' && item.type === 'text/plain') {
-            // If it's a text/plain item, try to handle it as a URL
-            item.getAsString(async (url) => {
-                let [urlIsImage, imageType] = await isImageURL(url);
-                if (urlIsImage) {
-                    let imageFile = urlToImageFile(url, imageType);
-                    predict(imageFile)
-                } else {
-                    alert("Unable to convert URL to image.")
-                }
-            });
-        }
+            // If it's a text/plain item, it may be a URL.
+            alert("Input was either a URL (images dragged from other sites) or text. If dragging image, it must be a file.")
+          }
         });
     } else {
         // Use DataTransfer interface to access the file(s)
@@ -83,37 +75,6 @@ async function handleDrop(e) {
         });
     }
 }
-
-function isImageURL(url) {
-    // checks if the url is an image
-    return fetch(url, {method: 'HEAD'})
-        .then(res => {
-            if (res.ok) {
-                const contentType = res.headers.get('Content-Type');
-                
-                return [contentType.startsWith('image/'), contentType];
-            } else {
-                alert("URL is not valid.")
-                return [false, null];
-            }
-        }).catch(err => {
-            console.error(err)
-            return [false, null];
-        })
-}
-
-async function urlToImageFile(url, imageType) {
-    return fetch(url)
-        .then(response => response.blob())
-        .then(blob => {
-            return new File([blob], 'image', {type: imageType});
-        })
-        .catch(error => {
-            console.error('Error converting image URL to Blob:', error);
-            throw error;
-        });
-}
-
 
 async function predict(file) {
     let imageContainer = document.getElementById('drop-image');
@@ -191,7 +152,7 @@ function closeModal() {
     <label for="upload-button" id="upload-label">Select a File</label>
     <input id="upload-button" type="file" accept="image/jpeg, image/png">
     <h3>or drop an image here</h3>
-    <h4>or paste or input a <span onclick="inputURL()" id="url-paste">url</span></h4>
+    <h4>or paste</h4>
     `
     document.querySelector('input[type="file"]').addEventListener('change', async function() {
         if (this.files && this.files[0]) {

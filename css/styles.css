@@ -36,16 +36,6 @@ body {
   background: rgb(255, 255, 255);
 }
 
-#url-paste {
-  text-decoration: underline;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-#url-paste:hover {
-  color: rgb(238, 203, 137);
-}
-
 #upload-button {
   display: none;
 }
