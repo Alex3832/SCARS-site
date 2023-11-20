@@ -121,6 +121,10 @@ body {
   align-items: center;
 }
 
+#modal a {
+  text-decoration: underline;
+}
+
 #modal-title {
   font-size: clamp(2rem, 4vw, 4rem);
 }
