@@ -150,6 +150,19 @@ function openModal(prediction, confidence) {
     setTimeout(() => {
         document.getElementById("confidence").style.width = confidence + "%"
     }, 300)
+
+    document.getElementById("save-button").onclick = () => {
+        // creates persistent cookie of result on click
+        let cookieValue = {
+            prediction: prediction,
+            confidence: confidence,
+            timestamp: new Date().getTime(),
+        }
+
+        let jsonCookieValue = JSON.stringify(cookieValue)
+
+        document.cookie = "predictionData=" + encodeURIComponent(jsonCookieValue) + "; path=/"
+    }
 }
 
 function closeModal() {
