@@ -187,4 +187,15 @@ function closeModal() {
     document.getElementById("overlay").style.display = "none";
     document.body.style.overflow = "auto";
     document.getElementById("confidence").style.width = "0%"
+    document.getElementById("drop-image").innerHTML = `
+    <label for="upload-button" id="upload-label">Select a File</label>
+    <input id="upload-button" type="file" accept="image/jpeg, image/png">
+    <h3>or drop an image here</h3>
+    <h4>or paste or input a <span onclick="inputURL()" id="url-paste">url</span></h4>
+    `
+    document.querySelector('input[type="file"]').addEventListener('change', async function() {
+        if (this.files && this.files[0]) {
+            predict(this.files[0])
+        }
+    })
 }
