@@ -204,7 +204,7 @@ body {
 }
 
 #see-all-button {
-  text-decoration: none;
+  text-decoration: none !important;
   background-color: rgb(175, 175, 255);
 }
 
