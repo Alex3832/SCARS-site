@@ -28,3 +28,54 @@ body {
 .link {
 	text-decoration: underline;
 }
+
+
+.deven {
+	display: flex;
+	margin-left: 20vw;
+}
+
+.devimg {
+	width: 120px;
+	border-radius: 50%;
+
+}
+
+.deventext {
+	margin-top: 50px;
+	margin-left: 4vw;
+}
+
+
+
+.alex {
+	display: flex;
+	justify-content: right;
+	margin-right: 20vw;
+	margin-top: 5vh;
+}
+
+.aleximg {
+	width: 120px;
+	border-radius: 50%;
+}
+
+.alextext {
+	margin-top: 50px;
+	margin-right: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
