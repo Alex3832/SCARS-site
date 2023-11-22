@@ -32,6 +32,12 @@ function retrieveCookies() {
             }
         }
     }
+
+    return {
+        timestamp: timestampArray,
+        confidence: confidenceArray,
+        prediction: predictionArray
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
