@@ -60,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 x: cookies.timestamps[index],
                 y: prediction
             })),
-            borderColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 175, 175, 1)' : 'rgba(175, 175, 255, 1)'),
+            borderColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 165, 0, 1)' : 'rgba(175, 175, 255, 1)'),
             borderWidth: 1,
-            backgroundColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 175, 175, 0.5)' : 'rgba(175, 175, 255, 0.5)'),
-            hoverBackgroundColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 175, 175, 1)' : 'rgba(175, 175, 255, 1)'),
-            hoverBorderColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 175, 175, 1)' : 'rgba(175, 175, 255, 1)'),
+            backgroundColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 165, 0, 0.5)' : 'rgba(175, 175, 255, 0.5)'),
+            hoverBackgroundColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 165, 0, 1)' : 'rgba(175, 175, 255, 1)'),
+            hoverBorderColor: cookies.predictions.map(prediction => prediction === 'Malignant' ? 'rgba(255, 165, 0, 1)' : 'rgba(175, 175, 255, 1)'),
             pointRadius: cookies.confidences.map(confidence => parseFloat(confidence) * 0.01 * 20),
             pointHoverRadius: cookies.confidences.map(confidence => parseFloat(confidence) * 0.01 * 40),
         }]
@@ -106,8 +106,8 @@ document.addEventListener("DOMContentLoaded", function() {
         datasets: [{
             label: 'Prediction Frequency',
             data: [cookies.predictions.filter(prediction => prediction === 'Benign').length, cookies.predictions.filter(prediction => prediction === 'Malignant').length],
-            backgroundColor: ['rgba(175, 175, 255, 0.5)', 'rgba(255, 175, 175, 0.5)'],
-            borderColor: ['rgba(175, 175, 255, 1)', 'rgba(255, 175, 175, 1)'],
+            backgroundColor: ['rgba(175, 175, 255, 0.5)', 'rgba(255, 165, 0, 0.5)'],
+            borderColor: ['rgba(175, 175, 255, 1)', 'rgba(255, 165, 0, 1)'],
             borderWidth: 1
         }]
     }
@@ -136,8 +136,8 @@ document.addEventListener("DOMContentLoaded", function() {
         labels: ['Benign', 'Malignant'],
         datasets: [{
             data: [cookies.predictions.filter(prediction => prediction === 'Benign').length, cookies.predictions.filter(prediction => prediction === 'Malignant').length],
-            backgroundColor: ['rgba(175, 175, 255, 0.5)', 'rgba(255, 175, 175, 0.5)'],
-            borderColor: ['rgba(175, 175, 255, 1)', 'rgba(255, 175, 175, 1)'],
+            backgroundColor: ['rgba(175, 175, 255, 0.5)', 'rgba(255, 165, 0, 0.5)'],
+            borderColor: ['rgba(175, 175, 255, 1)', 'rgba(255, 165, 0, 1)'],
             hoverOffset: 4
         }]
     }
@@ -163,10 +163,10 @@ document.addEventListener("DOMContentLoaded", function() {
             label: 'Confidence Level',
             data: cookies.confidences,
             fill: false,
-            borderColor: 'rgba(255, 175, 175, 1)',
+            borderColor: 'rgba(255, 165, 0, 1)',
             borderWidth: 1,
-            backgroundColor: 'rgba(255, 175, 175, 0.5)',
-            hoverBackgroundColor: 'rgba(255, 175, 175, 1)',
+            backgroundColor: 'rgba(255, 165, 0, 0.5)',
+            hoverBackgroundColor: 'rgba(255, 165, 0, 1)',
             borderDash: [5, 5],
         }]
     }
