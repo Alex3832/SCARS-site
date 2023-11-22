@@ -160,8 +160,9 @@ function openModal(prediction, confidence) {
         }
 
         let jsonCookieValue = JSON.stringify(cookieValue)
+        let cookieName = "predictionData_" + jsonCookieValue.timestamp
 
-        document.cookie = "predictionData=" + encodeURIComponent(jsonCookieValue) + "; path=/"
+        document.cookie = cookieName + "=" + encodeURIComponent(jsonCookieValue) + "; path=/"
     }
 }
 
