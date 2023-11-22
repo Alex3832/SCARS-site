@@ -81,6 +81,7 @@ body {
 #loading-overlay {
   position: fixed;
   display: none;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -90,9 +91,49 @@ body {
   align-items: center;
 }
 
-#loading-img {
-  width: 20vw;
+.loader {
+	width: clamp(200px, 50vw, 500px);
 }
+
+.loading {
+	font-size: clamp(1.5rem, 5vw, 3rem);
+	font-family: cocogoose, sans-serif;
+	font-weight: bold;
+	letter-spacing: 2.1px;
+	text-transform: capitalize;
+	overflow: hidden;
+	position: relative;
+}
+
+.loading:before {
+	color: rgb(175, 175, 255);
+	content: attr(data-loading-text);
+}
+
+.loading:after {
+	top: 0;
+	left: 0;
+	width: 0;
+	opacity: 1;
+	color: transparent;
+	background-image: linear-gradient(30deg, orange, transparent);
+	background-clip: text;
+	overflow: hidden;
+	position: absolute;
+	content: attr(data-loading-text);
+	animation: loading 10s infinite ease;
+}
+
+@keyframes loading {
+	from, to {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+}
+
 
 #overlay {
   position: fixed;

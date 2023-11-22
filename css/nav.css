@@ -13,6 +13,7 @@ body {
   display: flex;
   color: rgba(0,20,40);
   flex-direction: column;
+  overflow-y: scroll;
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
@@ -50,7 +51,8 @@ a {
     align-items: center;
     padding: 1rem 1.5rem;
     background: linear-gradient(0deg, #FFDAC2, #ffe5c3);
-    border-bottom: solid 2px black
+    border-bottom: solid 2px black;
+    z-index: 999;
 }
 
 .hamburger {
@@ -104,12 +106,14 @@ a {
         width: 100%;
         border-radius: 5px;
         text-align: center;
+        z-index: 99;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
         top: 5rem;
+        transform: translateZ(1px);
     }
 
     .nav-item {

@@ -160,9 +160,9 @@ function openModal(prediction, confidence) {
         }
 
         let jsonCookieValue = JSON.stringify(cookieValue)
-        let cookieName = "predictionData_" + jsonCookieValue.timestamp
-
-        document.cookie = cookieName + "=" + encodeURIComponent(jsonCookieValue) + "; path=/"
+        let cookieName = "predictionData_" + cookieValue.timestamp
+        document.cookie = cookieName + "=" + encodeURIComponent(jsonCookieValue) + "; expires=" + new Date(Date.now() + 1000 * 60 * 60 * 24 * 365 * 10) + "; path=/"
+        closeModal() // prevent double saving the same data if possible
     }
 }
 

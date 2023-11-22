@@ -2,13 +2,41 @@ body {
 	background: linear-gradient(180deg, #FFDAC2, #ffdab1);
 }
 
-.pastresults {
-	padding-top: 5vh;
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 130vh;
+	overflow: scroll-y;
 }
 
-.resultsdesc {
-	width: 80vw;
-	margin: 1vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
+#title {
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+}
+
+.responsive-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.chart-container {
+	z-index: 1;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: clamp(100px, 30vh, 2000px);
+	width: clamp(300px, 40vw, 2000px);
+}
+
+canvas {
+	height: 100%;
+	width: 100%;
 }
