@@ -16,7 +16,7 @@ SCARS (Skin Cancer Automatic Recognition System) is an open source neural networ
 
 #### Step 3: 
 
-- Input image into the [detection page.](https://scarsai.netlify.app/detect)
+- Input image into the [detection page.](https://scarsai.netlify.app/detection)
 
 #### Step 4:
 
