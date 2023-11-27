@@ -4,8 +4,6 @@
 
 SCARS (Skin Cancer Automatic Recognition System) is an open source neural network designed for binary classification of skin lesions/moles into either benign or malignant type.
 
-![SCARS Logo](https://github.com/SCARS-site/blob/main/public/logo.png?raw=true)
-
 ## Usage ➕
 
 #### Step 1:
@@ -23,3 +21,6 @@ SCARS (Skin Cancer Automatic Recognition System) is an open source neural networ
 #### Step 4:
 
 - Get classification and confidence. Optionally, you can save your results to cookies and [view them.](https://scarsai.netlify.app/past-results)
+
+
+![SCARS Logo](https://github.com/Alex3832/SCARS-site/blob/main/public/logo.png?raw=true)
